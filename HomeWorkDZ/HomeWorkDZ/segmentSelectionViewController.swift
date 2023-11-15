@@ -3,7 +3,7 @@ import UIKit
 
 class segmentSelectionViewController: UIViewController {
    
-    @IBOutlet weak var segmentControlButten: UISegmentedControl!
+    @IBOutlet weak var changeViewSegmentControl: UISegmentedControl!
     
      private lazy var firstTextField: UITextField = {
         let oneTextField = UITextField()
@@ -21,12 +21,12 @@ class segmentSelectionViewController: UIViewController {
         return twoTextField
    }()
     
-    private lazy var firstButten: UIButton = {
-        let oneButten = UIButton()
-        oneButten.setTitle("ButtenOne", for: .normal)
-        oneButten.frame = CGRect(x: 16, y: 100, width: 100, height: 50)
-        oneButten.backgroundColor = .green
-        return oneButten
+    private lazy var firstButton: UIButton = {
+        let oneButton = UIButton()
+        oneButton.setTitle("ButtenOne", for: .normal)
+        oneButton.frame = CGRect(x: 16, y: 100, width: 100, height: 50)
+        oneButton.backgroundColor = .green
+        return oneButton
     }()
     
     private lazy var secondButten: UIButton = {
@@ -37,10 +37,11 @@ class segmentSelectionViewController: UIViewController {
         return twoButten
     }()
     
-    private lazy var firstImage: UIImageView = {
+    private lazy var firstImageView: UIImageView = {
         let oneImage = UIImageView()
         oneImage.frame = CGRect(x: 16, y: 50, width: 120, height: 200)
         oneImage.image = .city
+        oneImage.contentMode = .scaleAspectFit
         return oneImage
     }()
     
@@ -48,6 +49,7 @@ class segmentSelectionViewController: UIViewController {
         let twoImage = UIImageView()
         twoImage.frame = CGRect(x: 150, y: 50, width: 120, height: 200)
         twoImage.image = .blueCar
+        twoImage.contentMode = .scaleAspectFit
         return twoImage
     }()
     
@@ -59,45 +61,45 @@ class segmentSelectionViewController: UIViewController {
     }
     
     func setupUI() {
-        imageView.addSubview(firstButten)
+        imageView.addSubview(firstButton)
         imageView.addSubview(secondButten)
         imageView.backgroundColor = .green
         imageView.addSubview(firstTextField)
         imageView.addSubview(secondTextField)
-        imageView.addSubview(firstImage)
+        imageView.addSubview(firstImageView)
         imageView.addSubview(secondImage)
-        firstButten.isHidden = true
+        firstButton.isHidden = true
         secondButten.isHidden = true
-        firstImage.isHidden = true
+        firstImageView.isHidden = true
         secondImage.isHidden = true
     }
     
     @IBAction func changingSegmentAction(_ sender: Any) {
         
-        switch segmentControlButten?.selectedSegmentIndex {
+        switch changeViewSegmentControl?.selectedSegmentIndex {
         case 0:
             imageView.backgroundColor = .green
             firstTextField.isHidden = false
             secondTextField.isHidden = false
-            firstButten.isHidden = true
+            firstButton.isHidden = true
             secondButten.isHidden = true
-            firstImage.isHidden = true
+            firstImageView.isHidden = true
             secondImage.isHidden = true
         case 1:
             imageView.backgroundColor = .blue
             firstTextField.isHidden = true
             secondTextField.isHidden = true
-            firstButten.isHidden = false
+            firstButton.isHidden = false
             secondButten.isHidden = false
-            firstImage.isHidden = true
+            firstImageView.isHidden = true
             secondImage.isHidden = true
         case 2:
             imageView.backgroundColor = .purple
             firstTextField.isHidden = true
             secondTextField.isHidden = true
-            firstButten.isHidden = true
+            firstButton.isHidden = true
             secondButten.isHidden = true
-            firstImage.isHidden = false
+            firstImageView.isHidden = false
             secondImage.isHidden = false
             
         default:

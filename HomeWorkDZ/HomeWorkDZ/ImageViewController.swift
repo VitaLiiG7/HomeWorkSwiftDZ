@@ -3,6 +3,8 @@ import UIKit
 
 class ImageViewController: UIViewController {
     
+    var imagesArray = [UIImage.init(named: "blueCar"), UIImage.init(named: "bridge"), UIImage.init(named: "butterfly"), UIImage.init(named: "cat"), UIImage.init(named: "city"), UIImage.init(named: "leopard"), UIImage.init(named: "mountain"), UIImage.init(named: "ocean"), UIImage.init(named: "raspberry"), UIImage.init(named: "redCar")]
+    
     var nameLabelArray = ["Label 1", "Label 2", "Label 3", "Label 4", "Label 5", "Label 6", "Label 7", "Label 8", "Label 9", "Label 10"]
     
     @IBOutlet weak var imagesView: UIView!
@@ -11,6 +13,7 @@ class ImageViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
+    
     func setupUI() {
         let screenWidth = Double(self.view.frame.size.width)
         let imageWidth = screenWidth / 2 - 20
@@ -21,7 +24,7 @@ class ImageViewController: UIViewController {
         var stepY = 0
         var definitionOfPositonImage = 0
         
-        for index in 0..<imagesArray.count  {
+        for index in 0 ..< imagesArray.count {
             if index > 3 {
                 break
             }
@@ -31,6 +34,7 @@ class ImageViewController: UIViewController {
             } else {
                 imageCoordinateX = 220
             }
+            
             definitionOfPositonImage += 1
             imageCoordinateY = stepY * 170
             
@@ -40,13 +44,13 @@ class ImageViewController: UIViewController {
             nameLabel.text = nameLabelArray[index]
             
             if index == 0 || index == 1 {
-                
                 imageView.frame = CGRect(x: imageCoordinateX, y: 100, width: Int(imageWidth), height: Int(imageHeight))
                 nameLabel.frame = CGRect(x: imageCoordinateX, y: 200, width: Int(imageWidth), height: Int(imageHeight))
             } else {
                 imageView.frame = CGRect(x: imageCoordinateX, y: imageCoordinateY, width: Int(imageWidth), height: Int(imageHeight))
                 nameLabel.frame = CGRect(x: imageCoordinateX, y: imageCoordinateY + 100, width: Int(imageWidth), height: Int(imageHeight))
             }
+            
             view.addSubview(imageView)
             view.addSubview(nameLabel)
         }

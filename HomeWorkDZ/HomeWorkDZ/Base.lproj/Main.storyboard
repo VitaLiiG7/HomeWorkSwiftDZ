@@ -87,12 +87,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GG-H4-hKD">
-                                <rect key="frame" x="222" y="724" width="99" height="35"/>
+                                <rect key="frame" x="230" y="724" width="83" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="backward"/>
+                                <buttonConfiguration key="configuration" style="filled" title="forward"/>
                                 <connections>
-                                    <action selector="showsFollowingImageAction:" destination="NuX-Uj-DBe" eventType="touchUpInside" id="RLs-Nb-Prv"/>
+                                    <action selector="showsFollowingImageAction:" destination="NuX-Uj-DBe" eventType="touchUpInside" id="yfz-fF-aYy"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SeH-ff-4MN">
@@ -100,12 +100,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-Wa-EyJ">
-                                <rect key="frame" x="81" y="724" width="83" height="35"/>
+                                <rect key="frame" x="73" y="724" width="99" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="forward"/>
+                                <buttonConfiguration key="configuration" style="filled" title="backward"/>
                                 <connections>
-                                    <action selector="returnsPreviousImageAction:" destination="NuX-Uj-DBe" eventType="touchUpInside" id="N24-Ur-Cxh"/>
+                                    <action selector="returnsPreviousImageAction:" destination="NuX-Uj-DBe" eventType="touchUpInside" id="ojX-LZ-YRC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,7 +114,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="720-HE-Ith"/>
                     <connections>
-                        <outlet property="picturesView" destination="SeH-ff-4MN" id="0z2-if-xOL"/>
+                        <outlet property="pictureImageView" destination="SeH-ff-4MN" id="0z2-if-xOL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIy-S2-BnY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -152,8 +152,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="kOz-fD-BOA"/>
                     <connections>
+                        <outlet property="changeViewSegmentControl" destination="nvx-EP-3fy" id="U6d-bK-ziA"/>
                         <outlet property="imageView" destination="LJR-TP-1sC" id="Dmg-ht-Iyj"/>
-                        <outlet property="segmentControlButten" destination="nvx-EP-3fy" id="U6d-bK-ziA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
