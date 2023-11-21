@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2116A6322B09622800F2595D /* SettingPhoneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2116A6312B09622800F2595D /* SettingPhoneCell.swift */; };
+		21469C782B0A6D1D00C2E0D2 /* SwitchingScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21469C772B0A6D1D00C2E0D2 /* SwitchingScreenViewController.swift */; };
+		21469C7C2B0A75A800C2E0D2 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21469C7B2B0A75A800C2E0D2 /* CollectionViewController.swift */; };
+		21469C7E2B0A75F800C2E0D2 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21469C7D2B0A75F800C2E0D2 /* ScrollViewController.swift */; };
+		21469C802B0AAF5D00C2E0D2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21469C7F2B0AAF5D00C2E0D2 /* Models.swift */; };
+		21469C822B0AB7CE00C2E0D2 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21469C812B0AB7CE00C2E0D2 /* PhotoCollectionViewCell.swift */; };
+		21E444E22B0C32410035A5D1 /* SettingSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E444E12B0C32410035A5D1 /* SettingSource.swift */; };
 		21F810CD2B039CEF00470D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810CC2B039CEF00470D3B /* AppDelegate.swift */; };
 		21F810CF2B039CEF00470D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810CE2B039CEF00470D3B /* SceneDelegate.swift */; };
 		21F810D12B039CEF00470D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810D02B039CEF00470D3B /* ViewController.swift */; };
@@ -16,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2116A6312B09622800F2595D /* SettingPhoneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPhoneCell.swift; sourceTree = "<group>"; };
+		21469C772B0A6D1D00C2E0D2 /* SwitchingScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchingScreenViewController.swift; sourceTree = "<group>"; };
+		21469C7B2B0A75A800C2E0D2 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		21469C7D2B0A75F800C2E0D2 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
+		21469C7F2B0AAF5D00C2E0D2 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		21469C812B0AB7CE00C2E0D2 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		21E444E12B0C32410035A5D1 /* SettingSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingSource.swift; sourceTree = "<group>"; };
 		21F810C92B039CEF00470D3B /* HomeWorkDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F810CC2B039CEF00470D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F810CE2B039CEF00470D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,11 +72,18 @@
 			children = (
 				21F810CC2B039CEF00470D3B /* AppDelegate.swift */,
 				21F810CE2B039CEF00470D3B /* SceneDelegate.swift */,
-				21F810D02B039CEF00470D3B /* ViewController.swift */,
 				21F810D22B039CEF00470D3B /* Main.storyboard */,
 				21F810D52B039CF100470D3B /* Assets.xcassets */,
+				21469C772B0A6D1D00C2E0D2 /* SwitchingScreenViewController.swift */,
+				21469C7F2B0AAF5D00C2E0D2 /* Models.swift */,
+				21469C7B2B0A75A800C2E0D2 /* CollectionViewController.swift */,
+				21469C812B0AB7CE00C2E0D2 /* PhotoCollectionViewCell.swift */,
+				21F810D02B039CEF00470D3B /* ViewController.swift */,
+				21E444E12B0C32410035A5D1 /* SettingSource.swift */,
+				21469C7D2B0A75F800C2E0D2 /* ScrollViewController.swift */,
 				21F810D72B039CF100470D3B /* LaunchScreen.storyboard */,
 				21F810DA2B039CF100470D3B /* Info.plist */,
+				2116A6312B09622800F2595D /* SettingPhoneCell.swift */,
 			);
 			path = HomeWorkDZ;
 			sourceTree = "<group>";
@@ -139,7 +160,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				21F810D12B039CEF00470D3B /* ViewController.swift in Sources */,
+				21469C822B0AB7CE00C2E0D2 /* PhotoCollectionViewCell.swift in Sources */,
+				2116A6322B09622800F2595D /* SettingPhoneCell.swift in Sources */,
 				21F810CD2B039CEF00470D3B /* AppDelegate.swift in Sources */,
+				21469C7E2B0A75F800C2E0D2 /* ScrollViewController.swift in Sources */,
+				21E444E22B0C32410035A5D1 /* SettingSource.swift in Sources */,
+				21469C7C2B0A75A800C2E0D2 /* CollectionViewController.swift in Sources */,
+				21469C802B0AAF5D00C2E0D2 /* Models.swift in Sources */,
+				21469C782B0A6D1D00C2E0D2 /* SwitchingScreenViewController.swift in Sources */,
 				21F810CF2B039CEF00470D3B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
