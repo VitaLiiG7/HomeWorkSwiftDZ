@@ -1,7 +1,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+final class TableViewController: UIViewController, UITableViewDelegate {
     
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
@@ -42,22 +42,24 @@ final class ViewController: UIViewController, UITableViewDelegate, UITableViewDa
             SettingOption(title: "Пункт управления", icon: UIImage(systemName: "square.topthird.inset.filled"), iconBackgroundColor: .systemGray),
             SettingOption(title: "Экран и яркость", icon: UIImage(systemName: "textformat.size"), iconBackgroundColor: .systemBlue)]))
     }
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return models.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models[section].option.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model = models[indexPath.section].option[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingPhoneCell.identifier, for: indexPath) as? SettingPhoneCell else {
-            return UITableViewCell()
-        }
-        cell.configure(with: model)
-        return cell
-    }
 }
+extension TableViewController: UITableViewDataSource {
+        func numberOfSections(in tableView: UITableView) -> Int {
+            return models.count
+        }
+        
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return models[section].option.count
+        }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let model = models[indexPath.section].option[indexPath.row]
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingPhoneCell.identifier, for: indexPath) as? SettingPhoneCell else {
+                return UITableViewCell()
+            }
+            cell.configure(with: model)
+            return cell
+        }
+    }
 
 

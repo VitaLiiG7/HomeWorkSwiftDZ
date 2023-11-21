@@ -30,12 +30,12 @@ final class SettingPhoneCell: UITableViewCell {
         super .init(style: style, reuseIdentifier: reuseIdentifier)
         setupUI()
     }
-        
+    
     required init?(coder: NSCoder) {
         fatalError()
     }
     
-   private func setupUI() {
+    private func setupUI() {
         contentView.addSubview(nameIconlabel)
         contentView.addSubview(iconContainer)
         iconContainer .addSubview(iconImageView)
@@ -48,13 +48,13 @@ final class SettingPhoneCell: UITableViewCell {
         setDimensions()
     }
     
-   private func setDimensions() {
+    private func setDimensions() {
         let size: CGFloat = contentView.frame.size.height - 12
-        iconContainer.frame = CGRect(x: 1, y: 7, width: size, height: size)
+        iconContainer.frame = CGRect(x: 7, y: 7, width: size, height: size)
         
         let imageSize: CGFloat = size/1.5
-        iconImageView.frame = CGRect(x: 1, y: 1, width: imageSize*1.5, height: imageSize*1.5)
-        nameIconlabel.frame = CGRect(x: 20 +  iconContainer.frame.size.width, y: 0, width: contentView.frame.size.width - 20 - iconContainer.frame.size.width, height: contentView.frame.size.height)
+        iconImageView.frame = CGRect(x: 1, y: 1, width: imageSize * 1.5, height: imageSize * 1.5)
+        nameIconlabel.frame = CGRect(x: 20 + iconContainer.frame.size.width, y: 0, width: contentView.frame.size.width - 20 - iconContainer.frame.size.width, height: contentView.frame.size.height)
     }
     
     override func prepareForReuse() {

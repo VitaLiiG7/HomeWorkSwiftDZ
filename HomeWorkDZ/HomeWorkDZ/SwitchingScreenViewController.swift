@@ -38,10 +38,10 @@ final class SwitchingScreenViewController: UIViewController {
             $0.translatesAutoresizingMaskIntoConstraints = false
             view.addSubview($0)
         }
-        constraint()
+       setupСonstraint()
     }
     
-    private func constraint() { //setupconstreint
+    private func setupСonstraint() {
         NSLayoutConstraint.activate([openScreenCollectionsViewButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant:  30),
                                      openScreenCollectionsViewButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -60),
                                      openScreenCollectionsViewButton.widthAnchor.constraint(equalToConstant: 100),
@@ -60,7 +60,7 @@ final class SwitchingScreenViewController: UIViewController {
     }
     
     @objc private func buttonTableViewDidTapped() {
-        let tableVC = ViewController()
+        let tableVC = TableViewController()
         navigationController?.pushViewController(tableVC, animated: true)
     }
     

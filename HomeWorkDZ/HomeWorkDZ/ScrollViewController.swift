@@ -141,10 +141,10 @@ final class ScrollViewController: UIViewController {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            burgerImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: -40),
-            burgerImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
-            burgerImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
-            burgerImageView.heightAnchor.constraint(equalToConstant: 230),
+            
+            nameDepositlabel.topAnchor.constraint(equalTo: mapImageView.bottomAnchor, constant: -20),
+            nameDepositlabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
+            nameDepositlabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
             nameOfOgranizationLabel.topAnchor.constraint(equalTo: burgerImageView.bottomAnchor, constant: 10),
             nameOfOgranizationLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
             nameOfOgranizationLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
@@ -158,19 +158,23 @@ final class ScrollViewController: UIViewController {
             nameIngredientLabel.topAnchor.constraint(equalTo: nameInformationDiscountLabel.bottomAnchor, constant: -5),
             nameIngredientLabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
             nameIngredientLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20)])
-        
+        setupMainInfoConstraints()
+    }
+    
+    private func setupMainInfoConstraints() {
         NSLayoutConstraint.activate([
-            menuSelectionButton.topAnchor.constraint(equalTo: nameIngredientLabel.bottomAnchor, constant: 20),
-            menuSelectionButton.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
-            menuSelectionButton.heightAnchor.constraint(equalToConstant: 50),
-            menuSelectionButton.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
+            burgerImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: -40),
+            burgerImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
+            burgerImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
+            burgerImageView.heightAnchor.constraint(equalToConstant: 230),
             mapImageView.topAnchor.constraint(equalTo: menuSelectionButton.bottomAnchor, constant: -20),
             mapImageView.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
             mapImageView.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
             mapImageView.heightAnchor.constraint(equalToConstant: 280),
-            nameDepositlabel.topAnchor.constraint(equalTo: mapImageView.bottomAnchor, constant: -20),
-            nameDepositlabel.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
-            nameDepositlabel.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
+            menuSelectionButton.topAnchor.constraint(equalTo: nameIngredientLabel.bottomAnchor, constant: 20),
+            menuSelectionButton.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
+            menuSelectionButton.heightAnchor.constraint(equalToConstant: 50),
+            menuSelectionButton.leftAnchor.constraint(equalTo: containerView.leftAnchor, constant: 20),
             createAnEventButton.topAnchor.constraint(equalTo: nameDepositlabel.bottomAnchor, constant: 20),
             createAnEventButton.rightAnchor.constraint(equalTo: containerView.rightAnchor, constant: -20),
             createAnEventButton.heightAnchor.constraint(equalToConstant: 50),

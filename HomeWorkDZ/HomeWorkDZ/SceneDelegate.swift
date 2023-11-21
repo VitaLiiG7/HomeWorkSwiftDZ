@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  HomeWorkDZ
-//
-//  Created by Виталий Горбунов on 14.11.2023.
-//
 
 import UIKit
 
