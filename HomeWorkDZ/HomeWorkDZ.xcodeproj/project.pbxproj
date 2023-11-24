@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2107BD3A2B10E6A500E7DF06 /* CharacterInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2107BD392B10E6A500E7DF06 /* CharacterInformationViewController.swift */; };
+		21A10AD52B0E2DC4000820A3 /* СartoonСharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A10AD42B0E2DC4000820A3 /* СartoonСharacters.swift */; };
+		21A10AD72B0E5795000820A3 /* CharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A10AD62B0E5795000820A3 /* CharacterCollectionViewCell.swift */; };
+		21A10AD92B0E6228000820A3 /* Networkmanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A10AD82B0E6228000820A3 /* Networkmanager.swift */; };
+		21CC19D62B0FDA550054BD63 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CC19D52B0FDA550054BD63 /* UIImageView+extension.swift */; };
 		21F810CD2B039CEF00470D3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810CC2B039CEF00470D3B /* AppDelegate.swift */; };
 		21F810CF2B039CEF00470D3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810CE2B039CEF00470D3B /* SceneDelegate.swift */; };
-		21F810D12B039CEF00470D3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810D02B039CEF00470D3B /* ViewController.swift */; };
+		21F810D12B039CEF00470D3B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F810D02B039CEF00470D3B /* CollectionViewController.swift */; };
 		21F810D42B039CEF00470D3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F810D22B039CEF00470D3B /* Main.storyboard */; };
 		21F810D62B039CF100470D3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F810D52B039CF100470D3B /* Assets.xcassets */; };
 		21F810D92B039CF100470D3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F810D72B039CF100470D3B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2107BD392B10E6A500E7DF06 /* CharacterInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInformationViewController.swift; sourceTree = "<group>"; };
+		21A10AD42B0E2DC4000820A3 /* СartoonСharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СartoonСharacters.swift"; sourceTree = "<group>"; };
+		21A10AD62B0E5795000820A3 /* CharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionViewCell.swift; sourceTree = "<group>"; };
+		21A10AD82B0E6228000820A3 /* Networkmanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkmanager.swift; sourceTree = "<group>"; };
+		21CC19D52B0FDA550054BD63 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		21F810C92B039CEF00470D3B /* HomeWorkDZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkDZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F810CC2B039CEF00470D3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F810CE2B039CEF00470D3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		21F810D02B039CEF00470D3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		21F810D02B039CEF00470D3B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		21F810D32B039CEF00470D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		21F810D52B039CF100470D3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21F810D82B039CF100470D3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +50,7 @@
 		21F810C02B039CEF00470D3B = {
 			isa = PBXGroup;
 			children = (
+				21A10AD42B0E2DC4000820A3 /* СartoonСharacters.swift */,
 				21F810CB2B039CEF00470D3B /* HomeWorkDZ */,
 				21F810CA2B039CEF00470D3B /* Products */,
 			);
@@ -58,7 +69,11 @@
 			children = (
 				21F810CC2B039CEF00470D3B /* AppDelegate.swift */,
 				21F810CE2B039CEF00470D3B /* SceneDelegate.swift */,
-				21F810D02B039CEF00470D3B /* ViewController.swift */,
+				21F810D02B039CEF00470D3B /* CollectionViewController.swift */,
+				2107BD392B10E6A500E7DF06 /* CharacterInformationViewController.swift */,
+				21A10AD82B0E6228000820A3 /* Networkmanager.swift */,
+				21A10AD62B0E5795000820A3 /* CharacterCollectionViewCell.swift */,
+				21CC19D52B0FDA550054BD63 /* UIImageView+extension.swift */,
 				21F810D22B039CEF00470D3B /* Main.storyboard */,
 				21F810D52B039CF100470D3B /* Assets.xcassets */,
 				21F810D72B039CF100470D3B /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21F810D12B039CEF00470D3B /* ViewController.swift in Sources */,
+				21A10AD52B0E2DC4000820A3 /* СartoonСharacters.swift in Sources */,
+				21F810D12B039CEF00470D3B /* CollectionViewController.swift in Sources */,
+				21A10AD72B0E5795000820A3 /* CharacterCollectionViewCell.swift in Sources */,
 				21F810CD2B039CEF00470D3B /* AppDelegate.swift in Sources */,
+				21A10AD92B0E6228000820A3 /* Networkmanager.swift in Sources */,
+				21CC19D62B0FDA550054BD63 /* UIImageView+extension.swift in Sources */,
 				21F810CF2B039CEF00470D3B /* SceneDelegate.swift in Sources */,
+				2107BD3A2B10E6A500E7DF06 /* CharacterInformationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
